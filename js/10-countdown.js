@@ -5,16 +5,12 @@ Write an application that counts down to 0 based on the number that a user passe
 */
 
 
+//FOR LOOP
+
 var counter;
-var again = "y";
-
-
-do {
-	counter = window.prompt("Enter a number from 1-100");
-	if (counter > 0){
-		counter--;
-	}
-	    again = window.prompt("Repeat entries? (y/n)", "y");
-} while (again === "y");
-		
-	
+var playAgain= "y";
+//
+counter = window.prompt("Enter a number from 1-100");
+for (i = counter; i >= 0; i--) {
+	console.log(i);
+} 
