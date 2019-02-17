@@ -6,8 +6,8 @@
 //prompt user to enter bill amount.
 
 
-var bill1 = parseFloat(window.prompt("Enter your first bill.", Enter first bill here));
-var bill2 = parseFloat(window.prompt("Enter your second bill.", Enter second bill here));
+var bill1 = parseFloat(window.prompt("Enter your first bill."));
+var bill2 = parseFloat(window.prompt("Enter your second bill."));
 
 var largerBill = 0;
 var equalBill = 0;
@@ -21,8 +21,7 @@ if (bill1 > bill2) {
     largerBill = bill2;
     //DISPLAY MESSAGE
     window.document.write(bill2); 
-} else if (bill1 == bill2) 
+} else {
     equalBill = bill1;
     window.document.write("Both bills are equal: " + equalBill);
 }
-
